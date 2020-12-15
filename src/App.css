@@ -1,38 +1,75 @@
 .App {
   text-align: center;
+  margin: auto;
+  width: 100%;
+  max-width: 1200px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  background-color: #ffffff;
+  text-align: left;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-new-applicant {
+  margin-top: 20px;
+}
+
+.button-form{
+  margin-top: 10px;
+}
+
+
+.input-country {
+  width: 300px;
+}
+
+.input-container {
+  margin-top: 10px;
   display: flex;
-  flex-direction: column;
+}
+
+.input-left {
+  width: calc(50% - 10px);
+}
+
+.input-right {
+  width: 100%
+}
+
+
+.input-original {
+  margin-left: 20px;
+  width: calc(50% - 10px);
+}
+
+.checkbox-container {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.text-json{
+  word-break: break-all;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 767px) {
+  .input-container {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+  .input-original{
+    margin-left: 0;
+    width: 100%
+  }
+  .input-left {
+    width: 100%
+  }
+  .input-country {
+    width: 50%;
   }
 }
